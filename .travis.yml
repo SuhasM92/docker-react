@@ -1,4 +1,6 @@
+language: generic
 sudo: required
+
 services:
  - docker
 
@@ -7,5 +9,3 @@ before_install:
 
 script:
  - docker run -e CI=true SuhasM92/docker-react npm run test
-
-language: generic
