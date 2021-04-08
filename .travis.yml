@@ -6,6 +6,6 @@ before_install:
  - docker build -t SuhasM92/docker-react -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true SuhasM92/docker-react npm run test -- --coverage
+ - docker run -e CI=true SuhasM92/docker-react npm run test
 
 language: generic
